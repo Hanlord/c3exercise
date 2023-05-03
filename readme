@@ -1,0 +1,61 @@
+strcmp
+strcmp ist definiert in der string, die in C über string.h, bzw. in C++ über cstring eingebunden wird.
+
+Funktion
+Die Funktion wird verwendet um zu prüfen, ob zwei Strings die gleichen Zeichen enthalten.
+
+#include <string.h>
+int strcmp (const char * str1, const char * str2);
+
+
+strncmp()
+strncmp ist definiert in der string, die in C über string.h, bzw. in C++ über cstring eingebunden wird.
+
+Funktion
+strncmp() vergleicht zwei Strings bis maximal zum angegebenen Zeichen oder in einem der beiden Strings ein Nullbyte gefunden wurde.
+
+Signatur
+#include <string.h>
+void * strncmp( char const * first, char const * second, size_t 
+
+
+strcat
+strcat ist definiert in der string, die in C über string.h, bzw. in C++ über cstring eingebunden wird.
+
+Funktion
+Mit der Funktion strcat werden zwei Strings verkettet.
+
+Signatur
+#include <string.h>
+char * strcat ( char * destination, const char * source );
+
+
+strncat()
+strncat ist definiert in der string, die in C über string.h, bzw. in C++ über cstring eingebunden wird.
+
+Funktion
+strncat() fügt einem String eine wählbare Anzahl von Zeichen von eines zweiten Strings an. Das Nullbyte des ersten Strings wird gesucht und mit dem zweiten String überschrieben. Nachdem die angebene Zahl von Zeichen des zweiten Strings kopiert wurden, wird abschließend ein neues Nullbyte gesetzt.
+
+Signatur
+#include <string.h>
+void * strncpy( char * target, char * source, size_t size );
+
+
+strstr()
+strstr ist definiert in der string, die in C über string.h, bzw. in C++ über cstring eingebunden wird.
+
+Funktion
+strstr() sucht einen Zeichenkette innerhalb eines Strings.
+
+Signatur
+#include <string.h>
+const char * strstr( char const * string, char const * pattern );
+      char * strstr( char       * string, char const * pattern );
+
+
+The strlcat() function appends the NUL-terminated string src to the end of
+     dst.  It will append at most size - strlen(dst) - 1 bytes, NUL-terminating
+     the result.
+
+     For
+     strlcat() that means the initial length of dst plus the length of src.
